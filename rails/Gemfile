@@ -21,6 +21,9 @@ gem "devise-i18n"
 # ユーザーのトークン認証を提供する
 gem "devise_token_auth"
 
+# enum を日本語化する
+gem "enum_help"
+
 # ページネーション機能を提供する
 gem "kaminari"
 
@@ -38,7 +41,6 @@ gem "rails", "~> 7.0.4"
 
 # メッセージを日本語化
 gem "rails-i18n"
-
 
 # タイムゾーン情報を提供する（標準gem）
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]

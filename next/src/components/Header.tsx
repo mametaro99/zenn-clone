@@ -27,6 +27,7 @@ const Header = () => {
             </Link>
           </Box>
           <Box>
+          <Link href="/sign_in">
             <Button
               color="primary"
               variant="contained"
@@ -40,6 +41,7 @@ const Header = () => {
             >
               Sign in
             </Button>
+          </Link>
             <Button
               color="primary"
               variant="outlined"

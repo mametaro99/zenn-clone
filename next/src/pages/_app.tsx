@@ -6,6 +6,7 @@ import * as React from 'react'
 import '@/styles/destyle.css'
 import createEmotionCache from '@/styles/createEmotionCache'
 import theme from '@/styles/theme'
+import CurrentUserFetch from '@/components/CurrentUserFetch'
 import Header from '@/components/Header'
 
 // Client-side cache, shared for the whole session of the user in the browser.
@@ -22,6 +23,7 @@ export default function MyApp(props: MyAppProps): JSX.Element {
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
+        <CurrentUserFetch />
         <Header />
         <Component {...pageProps} />
       </ThemeProvider>

@@ -8,6 +8,7 @@ import createEmotionCache from '@/styles/createEmotionCache'
 import theme from '@/styles/theme'
 import CurrentUserFetch from '@/components/CurrentUserFetch'
 import Header from '@/components/Header'
+import Snackbar from '@/components/Snackbar'
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache()
@@ -26,6 +27,7 @@ export default function MyApp(props: MyAppProps): JSX.Element {
         <CurrentUserFetch />
         <Header />
         <Component {...pageProps} />
+        <Snackbar />
       </ThemeProvider>
     </CacheProvider>
   )
